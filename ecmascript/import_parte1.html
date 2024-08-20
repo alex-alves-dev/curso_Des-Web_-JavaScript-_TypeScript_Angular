@@ -1,0 +1,14 @@
+<html>>
+    <body></body>
+        
+        <script type="module">
+            import { saudacao, getEnderecoByCEP } from './import/lib.mjs'
+            
+            console.log(saudacao())
+
+
+            getEnderecoByCEP('13835000')
+                .then(dados => console.log(dados))
+        </script>
+    
+</html>

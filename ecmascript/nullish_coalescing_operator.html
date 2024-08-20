@@ -1,0 +1,35 @@
+<html>
+    <body></body>
+        <script>
+            
+            //Testando com o operador logico OR
+            let teste1 = null || 'Valor a direita'
+            let teste2 = 0 || 'Valor a direita'
+            let teste3 = undefined || 'Valor a direita'
+            let teste4 = '' || 'Valor a direita'
+            let teste5 = 'Valor a Esquerda' || 'Valor a direita'
+
+            console.log('Teste1: ', teste1)
+            console.log('Teste2: ', teste2)
+            console.log('Teste3: ', teste3)
+            console.log('Teste4: ', teste4)
+            console.log('Teste5: ', teste5)
+
+            console.log('---------------------------------------')
+
+            //nullish coalescing (??)
+            teste1 = null ?? 'Valor a direita'
+            teste2 = 0 ?? 'Valor a direita'
+            teste3 = undefined ?? 'Valor a direita'
+            teste4 = '' ?? 'Valor a direita'
+            teste5 = 'Valor a Esquerda' ?? 'Valor a direita'
+
+            console.log('Teste1: ', teste1)
+            console.log('Teste2: ', teste2)
+            console.log('Teste3: ', teste3)
+            console.log('Teste4: ', teste4)
+            console.log('Teste5: ', teste5)
+
+        </script>
+    
+</html>
