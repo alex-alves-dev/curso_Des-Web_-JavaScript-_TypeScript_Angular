@@ -1,4 +1,4 @@
-let ola = (nome: string) => {
-    console.log("Olá " + nome)
+let ola = (nome: string, sobreNome: string) => {
+    console.log("Olá " + nome + sobreNome)
 }
 ola("Alex")
