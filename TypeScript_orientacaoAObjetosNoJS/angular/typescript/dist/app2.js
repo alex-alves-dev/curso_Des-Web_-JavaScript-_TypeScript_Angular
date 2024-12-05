@@ -16,8 +16,9 @@ class Carro {
     }
 }
 class Concessionaria {
-    constructor(endereco) {
+    constructor(endereco, listaDeCarros) {
         this.endereco = endereco;
+        this.listaDeCarros = listaDeCarros;
     }
     fornecerEndereco() {
         return this.endereco;
@@ -44,5 +45,12 @@ class Pessoa {
         return this.carro;
     }
 }
-let pessoa = new Pessoa('Jose', 'Veloster');
-console.log(pessoa.dizerCarroPreferido());
+/* ----criar carros ---*/
+let carroA = new Carro('Dodge Journey', 4);
+let carroB = new Carro('Veloster', 3);
+let carroC = new Carro('Cerato', 4);
+/* ---montar a lista de carros da concessionaria--- */
+let listaDeCarros = [carroA, carroB, carroC];
+let concessionaria = new Concessionaria('Av Paulista', listaDeCarros);
+/*  ---exibir a lista de carros---*/
+console.log(concessionaria.mostrarListaDeCarros());
